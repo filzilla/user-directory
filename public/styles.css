@@ -1,0 +1,46 @@
+div{
+
+   
+}
+body{
+    font-family: 'arial';
+   
+}
+.robot-container{
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      justify-content: flex-start;
+}
+.robot-cards{
+    border: 2px solid #EEEEEE;
+    margin: 1%;
+    flex-basis: 18%; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2%;
+    
+}
+.job-hunt{
+    color: #C0392B;
+}
+
+.robot-image{
+    align-items: center;
+    margin: auto;
+}
+.name{
+    text-align: left;
+    font-size: 1.5em;
+    color: #3498DB;
+    font-weight: 400;
+}
+.label{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.address-job{
+    text-align: center;
+}
