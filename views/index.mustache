@@ -13,14 +13,12 @@
 <div class = "robot-container">
 
     {{#users}}
-    <div class = "robot-cards">
-        <img class = "robot-image" src = {{avatar}}>
+    <div  class = "robot-cards">
+        <img class = "robot-image" src = {{avatar}} alt= "image of robot">
  
         </img>
 
-        <div class = 'name'>
-            {{name}}
-        </div>
+        <span><a class = 'name link' href = {{id}}  >{{name}}</a></span>
 
         <div class = 'address-job'>
             {{#job}}<p>{{job}}, {{company}}</p>{{/job}}

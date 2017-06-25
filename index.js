@@ -38,9 +38,18 @@ application.get('/', function (request, response) {
   response.render('index', dataFile);
 });
 
-application.get('/', function(request, response){
-  response.render('robot-card',dataFile);
-})
+application.get('/:userInfo', (request, response) => {
+
+  var user = dataFile.users[request.params.userInfo - 1]
+  response.render('robot-card', user);
+});
+
+application.post('/robot-card', (request, response) => {
+   request.render('robot-card', dataFile);
+});
+
+
+
 //arrray protype filter
 
 application.listen(3000, function () {
