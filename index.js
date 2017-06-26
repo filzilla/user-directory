@@ -8,21 +8,7 @@ const application = express();
 
 
 
-// define model
-// let robot = {};
 
-// robot.name = request.body.username;
-// robot.avatar = request.body.avatar;
-// robot.name = request.body.name;
-// robot.job = request.body.job;
-// robot.streetnum = request.body.address.street_num;
-// robot.steetname = request.body.address.street_name;
-// robot.city = request.body.address.city;
-// robot.state = request.body.address.state_or_province;
-// robot.postalcode = request.body.address.postal_code;
-// robot.country = request.body.address.country;
-
-// let model = robot;
 
 application.engine('mustache', mustacheExpress());
 application.set('view engine', 'mustache');
